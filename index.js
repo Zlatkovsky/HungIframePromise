@@ -13,7 +13,7 @@
     }
 
     try {
-      console.log("Host App: Starting call to iframe function, this will take 3 seconds");
+      console.log("Host App: Starting call to iframe function, this will take 2 seconds");
       await iframe.contentWindow.longRunningIframeFunction();
       console.log("Host App: Finished call to iframe function");
     } catch (e) {

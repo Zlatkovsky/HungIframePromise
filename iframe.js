@@ -6,7 +6,7 @@
       setTimeout(() => {
         console.log("Iframe: finished waiting 3 seconds, returning the Promise");
         resolve();
-      }, 3000);
+      }, 2000);
     });
   };
 

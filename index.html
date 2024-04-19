@@ -18,7 +18,7 @@
     <p>To see the example yourself:</p>
     <ol>
       <li>
-        Click "Invoke iframe function" and wait 3 seconds. You'll see a log statement saying that the iframe execution
+        Click "Invoke iframe function" and wait 2 seconds. You'll see a log statement saying that the iframe execution
         completed:
         <code>Host App: invokeSomethingOnIframe is done</code>
       </li>
@@ -47,7 +47,7 @@
 
     <pre>
 try {
-  console.log("Host App: Starting call to iframe function, this will take 3 seconds");
+  console.log("Host App: Starting call to iframe function, this will take 2 seconds");
   await iframe.contentWindow.longRunningIframeFunction();
   console.log("Host App: Finished call to iframe function");
 } catch (e) {
@@ -62,7 +62,7 @@ console.log("Host App: invokeSomethingOnIframe is done");
 window.longRunningIframeFunction = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      console.log("Iframe: finished waiting 3 seconds, returning the Promise");
+      console.log("Iframe: finished waiting 2 seconds, returning the Promise");
       resolve();
     }, 3000);
   });
