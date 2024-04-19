@@ -4,7 +4,7 @@
   window.longRunningIframeFunction = () => {
     return new Promise((resolve) => {
       setTimeout(() => {
-        console.log("Iframe: finished waiting 3 seconds, returning the Promise");
+        console.log("Iframe: finished waiting 2 seconds, returning the Promise");
         resolve();
       }, 2000);
     });
