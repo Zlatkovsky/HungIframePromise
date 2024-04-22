@@ -31,3 +31,14 @@ window.longRunningIframeFunction = () => {
 ```
 
 In our production-app case, the hanging Promise causes cleanup code -- which would otherwise run as soon as the Promise is resolved or rejected -- to not run. This, in turn, causes a massive memory leak.
+
+## Running the code
+
+To run the code, simply serve it using a web server. E.g.,:
+
+```bash
+npm install -g http-server
+http-server
+```
+
+If you make changes, you will likely want to open F12 tools and do a "Empty cache and hard refresh"
